@@ -1,0 +1,26 @@
+<div class="container-fluid">
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Crypto Scraper</h1>
+            <p class="lead">News articles scraped from cryptocurrecny websites</p>
+            <a href="/scrape">
+                <button type="button" class="btn btn-primary">Get New Articles</button>
+            </a>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-12">
+            {{#each result}}
+            <div class="card" style="width: 350px; height: 500px; display: inline-block; flex-wrap: wrap; margin: 20px; justify-content: center;">
+                <img class="card-img-top" alt="Card image cap" src="{{this.image}}">
+                <div class="card-body">
+                    <h5 class="card-title">{{this.title}}</h5>
+                    <p class="card-text">{{this.description}}</p>
+                    <a class="btn btn-primary" href="{{this.link}}">Read More</a>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</div>

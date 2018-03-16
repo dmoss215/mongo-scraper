@@ -22,5 +22,14 @@
   "bugs": {
     "url": "https://github.com/dmoss215/mongo-scraper/issues"
   },
-  "homepage": "https://github.com/dmoss215/mongo-scraper#readme"
+  "homepage": "https://github.com/dmoss215/mongo-scraper#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "mongoose": "^5.0.10",
+    "morgan": "^1.9.0",
+    "request": "^2.85.0"
+  }
 }
