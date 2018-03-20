@@ -17,7 +17,7 @@ app.get("/", function (req, res) {
             console.log(doc);
             res.render("index", {result: doc});
         }
-    })
+    }).sort({'_id': -1});
 })
 
 app.get("/scrape", function (req, res) {
